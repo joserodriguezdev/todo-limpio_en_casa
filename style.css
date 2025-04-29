@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    background-image:url(img/fondo.jpg);
+    background-size: cover;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #e9f2fa8c;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+  
+  .site-title {
+    font-size: 1.5rem;
+    color: #1761a6;
+  }
+  
+  .banner {
+    background-color: #a9f78f;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .carousel-track::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carousel .card {
+    flex: 0 0 80%;
+    scroll-snap-align: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .product-grid .card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 80%; /* Coincide con el ancho del carrusel */
+    max-width: 300px; /* Límite para que no se estire demasiado en pantallas grandes */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card h3, .card p {
+    margin: 5px 0;
+    color: #027d2f;
+  }
+  
+  .videos {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .video-card {
+    width: 80%; /* Igual al ancho de las cards */
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.511);
+  }
+  
+  .footer {
+    background-color: #4e39c4d2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  .footer p {
+    margin-bottom: 10px;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* separa los íconos sin espacios raros */
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    line-height: 1;
+    display: inline-block;
+  }
+  
+  
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 45px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px; /* centra verticalmente el ícono */
+  }
+  
+  
+  @keyframes slide {
+    0%, 20% { transform: translateX(0); }
+    25%, 45% { transform: translateX(-100%); }
+    50%, 70% { transform: translateX(-200%); }
+    75%, 95% { transform: translateX(-300%); }
+  }
+  
+  
